@@ -6,3 +6,5 @@
 	Created first view. Configured project and created database.
 	[14:45-15:05]
 	Created base.html and style.css and decorated nav tag
+	[20:30-21:15]
+	End build nav. Created script in javascript thanks to which we change mode website to dark.
