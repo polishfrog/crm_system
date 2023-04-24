@@ -3,5 +3,6 @@
 	[10:00-14:00]
 	Start project, create simple files, testing system.
 	[14:00-14:30]
-	Create first view. Configure project and create database.
-	
+	Created first view. Configured project and created database.
+	[14:45-15:05]
+	Created base.html and style.css and decorated nav tag

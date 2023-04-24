@@ -1,10 +1,30 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="https://unicons.iconscount.com/release/v4.0.0/css/line.css">
 </head>
 <body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="{% static 'images/logo.png' %}" alt="logo">
+            </div>
 
+            <span class="logo_name">CRM</span>
+        </div>
+
+        <div class="menu-items">
+            
+        </div>
+    </nav>
 </body>
 </html>
