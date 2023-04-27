@@ -8,3 +8,9 @@
 	Created base.html and style.css and decorated nav tag
 	[20:30-21:15]
 	End build nav. Created script in javascript thanks to which we change mode website to dark.
+	
+[27-04-2023]
+	[18:00-18:30]
+	Ending 'base.html'
+	[18:30-19:30]
+	Planning 'dasboard.html' and production this page (front-end)

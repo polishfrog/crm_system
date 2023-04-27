@@ -37,16 +37,16 @@
                     <span class="link-name">Analytics</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Like</span>
+                    <i class="uil uil-bill"></i>
+                    <span class="link-name">Bill</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-comments"></i>
-                    <span class="link-name">Comment</span>
+                    <i class="uil uil-comment-exclamation"></i>
+                    <span class="link-name">Opinion</span>
                 </a></li>
                 <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">Share</span>
+                    <i class="uil uil-desert"></i>
+                    <span class="link-name">Desert</span>
                 </a></li>
             </ul>
 
@@ -68,6 +68,13 @@
             </ul>
         </div>
     </nav>
+
+    <main>
+        {% block dashboard %}
+
+
+        {% endblock %}
+    </main>
 
 <script src="{% static 'js/darkmode.js' %}"></script>
 </body>

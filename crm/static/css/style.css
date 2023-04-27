@@ -9,15 +9,16 @@
 
 :root{
     /* ======= COLORS ====== */
-    --primary-color: #0E4BF1;
+    --primary-color: #585599;
     --panel-color: #FFF;
     --text-color: #000;
+    --text-color-white: #FFF;
     --black-light-color: #707070;
-    --border-color: #E6E5E5;
+    --border-color: #EDEDED;
     --toggle-color: #DDD;
-    --box1-color: #4DA3FF;
-    --box2-color: #FFE6AC;
-    --box3-color: #E7D1FC;
+    --box1-color: #81BC86;
+    --box2-color: #C7DE7C;
+    --box3-color: #585599;
     --title-icon-color: #FFF;
 
 
@@ -37,6 +38,7 @@ body.dark{
     --primary-color: #3A3B3C;
     --panel-color: #242526;
     --text-color: #CCC;
+    --text-color-white: #EDEDED;
     --black-light-color: #CCC;
     --border-color: #4D4C4C;
     --toggle-color: #FFF;
@@ -171,4 +173,81 @@ nav .menu-items{
 
 body.dark .switch:before{
     left: 20px;
+}
+
+main{
+    position: relative;
+    left:250px;
+    background-color: var(--panel-color);
+    border-left: 2px solid var(--border-color);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.dashboard{
+    padding-left: 20px;
+    width: calc(100% - 300px);
+}
+
+.dashboard .title-box{
+    position: relative;
+    left: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+.dashboard .title-box .circle{
+    position: relative;
+    top: 35px;
+    right: 20px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: var(--box2-color);
+}
+
+.dashboard .boxes{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dashboard .boxes .box-one,
+.dashboard .boxes .box-two,
+.dashboard .boxes .box-three{
+    margin-bottom: 25px;
+    height: 250px;
+    width: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .boxes .box-one{
+    background-color: var(--box1-color);
+}
+
+.dashboard .boxes .box-two{
+    background-color: var(--box2-color);
+}
+.dashboard .boxes .box-three{
+    background-color: var(--box3-color);
+}
+
+.dashboard .boxes .box .uil,
+.dashboard .boxes .box .title,
+.dashboard .boxes .box .info{
+    color: var(--text-color-white);
+    font-size: 35px;
+}
+
+.dashboard .boxes .box .uil{
+    font-size:60px;
 }
