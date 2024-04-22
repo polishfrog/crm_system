@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block dashboard %}
+
+    <div class="opinion">
+        <div class="opinion-filter">
+            <form action="" method="get">
+                {%  csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Search"><br><br>
+            </form>
+
+            {% for opinion in result %}
+
+                <p>{{ opinion.nickname }} | {{ opinion.rated }} | {{ opinion.textOpinion }} | {{ opinion.dateOpinion }}</p>
+            {% endfor %}
+
+        </div>
+    </div>
+
+{% endblock %}

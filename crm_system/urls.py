@@ -20,5 +20,6 @@ from crm import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.HomePage.as_view(), name='home-page')
+    path('', views.HomePage.as_view(), name='home-page'),
+    path('customer-opinion/', views.OpinionPage.as_view(), name='opinion-page'),
 ]

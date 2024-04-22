@@ -215,6 +215,7 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
 .dashboard .boxes .box-one,
@@ -228,6 +229,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 12px 12px 7px rgba(0,0,0, 0.7);
 }
 
 .dashboard .boxes .box-one{

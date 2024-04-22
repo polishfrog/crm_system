@@ -24,7 +24,7 @@
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="#">
+                <li><a href="{% url 'home-page' %}">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dashboard</span>
                 </a></li>
@@ -40,7 +40,7 @@
                     <i class="uil uil-bill"></i>
                     <span class="link-name">Bill</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="{% url 'opinion-page' %}">
                     <i class="uil uil-comment-exclamation"></i>
                     <span class="link-name">Opinion</span>
                 </a></li>
@@ -58,7 +58,7 @@
                 <li class="mode">
                     <a href="#">
                         <i class="uil uil-moon"></i>
-                        <span class="link-name">Dark Mode</span>
+                        <span class="link-name name-mode">Dark Mode</span>
                     </a>
                     <div class="mode-toggle">
                         <span class="switch"></span>
@@ -77,6 +77,6 @@
     </main>
 
 <script src="{% static 'js/darkmode.js' %}"></script>
-<script src="{% static 'js/focus_home.js' %}"></script>
+
 </body>
 </html>
