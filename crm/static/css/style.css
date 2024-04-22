@@ -9,16 +9,16 @@
 
 :root{
     /* ======= COLORS ====== */
-    --primary-color: #585599;
+    --primary-color: #163A5F;  /* #585599 */
     --panel-color: #FFF;
     --text-color: #000;
     --text-color-white: #FFF;
     --black-light-color: #707070;
     --border-color: #EDEDED;
     --toggle-color: #DDD;
-    --box1-color: #81BC86;
-    --box2-color: #C7DE7C;
-    --box3-color: #585599;
+    --box1-color: #45EBA5; /* #81BC86 */
+    --box2-color: #21ABA5; /* #C7DE7C */
+    --box3-color: #1D566E; /* #585599 */
     --title-icon-color: #FFF;
 
 
