@@ -12,11 +12,13 @@
     --primary-color: #163A5F;  /* #585599 */
     --panel-color: #FFF;
     --text-color: #000;
+    --text-color-opinion: #606060;
     --text-color-white: #FFF;
     --black-light-color: #707070;
     --border-color: #EDEDED;
     --toggle-color: #DDD;
     --box1-color: #45EBA5; /* #81BC86 */
+    --box1-color-hover: #34DA94; /* #81BC86 */
     --box2-color: #21ABA5; /* #C7DE7C */
     --box3-color: #1D566E; /* #585599 */
     --title-icon-color: #FFF;
@@ -38,15 +40,18 @@ body.dark{
     --primary-color: #3A3B3C;
     --panel-color: #242526;
     --text-color: #CCC;
+    --text-color-opinion: #FFF;
     --text-color-white: #EDEDED;
     --black-light-color: #CCC;
     --border-color: #4D4C4C;
     --toggle-color: #FFF;
-    --box1-color: #3A3B3C;
-    --box2-color: #3A3B3C;
-    --box3-color: #3A3B3C;
+    --box1-color: #FFC963; /* #3A3B3C */
+    --box1-color-hover: #FFDA74; /* #3A3B3C */
+    --box2-color: #2f2f2f; /* #3A3B3C */
+    --box3-color: #FFCB74; /* #3A3B3C */
     --title-icon-color: #CCC;
 }
+
 
 nav{
     position: fixed;
@@ -252,4 +257,122 @@ main{
 
 .dashboard .boxes .box .uil{
     font-size:60px;
+}
+
+.opinion{
+    margin: 10px 50px;
+    background-color: var(--panel-color);
+}
+
+.opinion form{
+    height: 100px;
+    padding: 25px 50px 0 50px;
+    margin: 50px 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: var(--text-color);
+    font-size: 125%;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px gray solid;
+    box-shadow: 5px 5px 3px rgba(0,0,0, 0.7);
+}
+
+.opinion form p{
+    margin: 0 10px;
+    padding-top: 5px;
+}
+
+#id_rated{
+    margin: 0 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#id_rated label input{
+    margin-left: 15px;
+    accent-color: var(--box1-color);
+    height: 20px;
+    width: 20px;
+}
+
+.opinion form p select{
+    margin-left: 15px;
+    background-color: var(--box1-color);
+    color: var(--text-color-white);
+    border-radius: 25px;
+    border: none;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    font-size: 80%;
+}
+
+.opinion form input[type=submit]{
+    margin-left: 15px;
+    margin-top: 7px;
+    background-color: var(--box1-color);
+    color: var(--text-color-white);
+    border-radius: 25px;
+    border: none;
+    height: 31px;
+    width: 120px;
+    text-align: center;
+    font-size: 90%;
+}
+
+.opinion form input[type=submit]:hover{
+    cursor: pointer;
+    background-color: var(--box1-color-hover);
+}
+
+
+.opinion .content-opinion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.opinion .content-opinion .user-opinion{
+    border-radius: 25px;
+    border: 2px gray solid;
+    padding: 20px;
+    margin-top: 25px;
+    min-height: 100px;
+    max-width: 1500px;
+    color: var(--text-color);
+    background-color: var(--panel-color);
+
+}
+.opinion .content-opinion .user-opinion .left{
+    display: inline-block;
+    width: 90%;
+}
+.opinion .content-opinion .user-opinion .right{
+    display: inline-block;
+    float: right;
+    width: 5%;
+    margin: 20px 0 0 5px;
+    font-size: 170%;
+}
+
+
+.opinion .content-opinion .user-opinion .left .nickname{
+    background-color: var(--panel-color);
+    font-weight: bold;
+    font-size: 110%;
+    color: var(--text-color-opinion) !important;
+    position: relative;
+    padding: 5px 10px;
+    bottom: 35px;
+}
+
+main{
+    min-height: 100%;
 }

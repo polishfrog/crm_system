@@ -8,12 +8,31 @@
                 {{ form.as_p }}
                 <input type="submit" value="Search"><br><br>
             </form>
-
+        </div>
+        <div class="content-opinion">
             {% for opinion in result %}
 
-                <p>{{ opinion.nickname }} | {{ opinion.rated }} | {{ opinion.textOpinion }} | {{ opinion.dateOpinion }}</p>
-            {% endfor %}
+                <div class="user-opinion">
+                    <div class="left">
+                        <span class="nickname">{{ opinion.nickname }}</span> <br>
+                        <h5>{{ opinion.dateOpinion }}</h5>
+                        <p>{{ opinion.textOpinion }}</p>
+                    </div>
+                    <div class="right">
+                        <span class="star">{{ opinion.rated }}</span>
+                        {% if opinion.rated <= 2 %}
+                            <i class="uil uil-star" style="color:indianred"></i>
+                        {% endif %}
+                        {% if opinion.rated == 3 %}
+                            <i class="uil uil-star" style="color:#FFC963"></i>
+                        {% endif %}
+                        {% if opinion.rated >= 4 %}
+                            <i class="uil uil-star" style="color:lightgreen"></i>
+                        {% endif %}
+                    </div>
+                </div><br>
 
+            {% endfor %}
         </div>
     </div>
 

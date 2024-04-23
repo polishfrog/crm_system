@@ -16,7 +16,7 @@ class Opinion(models.Model):
     Opinion model
     """
     nickname = models.CharField(max_length=25, null=False)
-    rated = models.CharField(max_length=50, choices=RATED, null=False)
+    rated = models.IntegerField(choices=RATED, null=False)
     textOpinion = models.TextField(null=False)
     dateOpinion = models.DateField(null=False)
 

@@ -14,9 +14,11 @@ RATED = (
 SEARCH_OPTION = (
     ("dateOpinion", "Date from height"),
     ("dateOpinion_reverse", "Date from low"),
+    ("rated", "Rate from height"),
+    ("rated_reverse", "Rate from low"),
 )
 
 
 class RatingForm(forms.Form):
     rated = forms.MultipleChoiceField(choices=RATED, required=False, label="Rated Opinion", widget=forms.CheckboxSelectMultiple)
-    search_option = forms.ChoiceField(choices=SEARCH_OPTION, required=False, label="Filtr:")
+    search_option = forms.ChoiceField(choices=SEARCH_OPTION, required=False, label="Filter:")
