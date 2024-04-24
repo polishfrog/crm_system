@@ -6,7 +6,7 @@ RATED = (
     (2, "Bad"),
     (3, "Normal"),
     (4, "Good"),
-    (5, "Best Ever"),
+    (5, "Excellent"),
 )
 
 RESOLVED_TYPE = (
