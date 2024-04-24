@@ -18,6 +18,11 @@ class HomePage(View):
         return render(request, 'dashboard.html', locals())
 
 
+class Orders(View):
+    def get(self, request):
+        pass
+
+
 class OpinionPage(View):
     """
     Feedback from customer about ours products <3
@@ -48,3 +53,6 @@ class OpinionPage(View):
         return render(request, 'opinion.html', locals())
 
 
+class ComplaintPage(View):
+    def get(self, request):
+        pass
